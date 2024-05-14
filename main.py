@@ -13,7 +13,7 @@ else:
 
 #for number in range(1000000,1000990):
 #intMaxSize = 9223372036854775807
-intMaxSize = 100000000
+intMaxSize = 500000000
 compteur = 0
 lastdifference = 0
 lastPrime = 2
@@ -33,7 +33,7 @@ print('are prime numbers')
 print("La taille maximale d'un entier sur cette plateforme est :", sys.maxsize)
 
 # Ouvrir un fichier en mode écriture
-with open('PrimeDifference.txt', 'w') as fichier:
+with open('PrimeDifference2-500Millions.txt', 'w') as fichier:
     fichier.write("Différence des nombres premiers de 2 à 100_000_000\n")
     for element in liste_de_difference:
         fichier.write(str(element) + "\n")
