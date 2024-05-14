@@ -29,14 +29,13 @@ else:
             for i in range(2, number):
                 if (number % i) == 0:
                     return f"{number} is not a prime number\n{i} times {number // i} is {number}"
-                    break
             else:
                 return f"{number} is a prime number"
         else:
             return f"{number} is not a prime number"
 
 
-    # Exemple d'utilisation
+    # Exemple utilisation
     number = 3321321
     result = check_prime(number)
     print(result)
