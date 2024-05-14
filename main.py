@@ -35,7 +35,7 @@ print("La taille maximale d'un entier sur cette plateforme est :", sys.maxsize)
 # Ouvrir un fichier en mode écriture
 with open('PrimeDifference.txt', 'w') as fichier:
     # Écrire dans le fichier
-    #fichier.write("Bonjour, monde !\n")
+    fichier.write("Différence des nombres premiers de 2 à 100_000_000\n")
     for element in liste_de_difference:
         fichier.write(str(element) + "\n")
     
