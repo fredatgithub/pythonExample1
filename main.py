@@ -9,9 +9,18 @@ if result:
 else:
     print(f'{number} is not prime')
 
-for number in range(1000000,1000990):
+#for number in range(1000000,1000990):
+intMaxSize = 9223372036854775807
+compteur = 0
+lastdifference = 0
+lastPrime = 2
+for number in range(2,intMaxSize):
     if IsPrimeByChatGPT(number):
-        print(f'{number}', end=" ")
+        #print(f'{number}', end=" ")
+        lastdifference = number - lastPrime
+        lastPrime = number
+        print(f'{number} différence = {lastdifference}', end=" ")
+        compteur += 1
 print('are prime numbers')
 
 import sys
