@@ -18,6 +18,7 @@ compteur = 0
 lastdifference = 0
 lastPrime = 2
 liste_de_difference = []
+line = ''
 #liste_de_chaines.append("Première chaîne")
 for number in range(2,intMaxSize):
     if IsPrimeByChatGPT(number):
@@ -25,7 +26,8 @@ for number in range(2,intMaxSize):
         lastdifference = number - lastPrime
         lastPrime = number
         print(f'{number} différence = {lastdifference}')
-        liste_de_difference.append(lastdifference)
+        line = f'{number} - {lastdifference}'
+        liste_de_difference.append(line)
         compteur += 1
 print('are prime numbers')
 
