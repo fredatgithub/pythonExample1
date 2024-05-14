@@ -29,8 +29,6 @@ for number in range(2,intMaxSize):
         compteur += 1
 print('are prime numbers')
 
-import sys
-
 #La taille maximale d'un entier sur cette plateforme est : 9_223_372_036_854_775_807 ou 9223372036854775807
 print("La taille maximale d'un entier sur cette plateforme est :", sys.maxsize)
 
