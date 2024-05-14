@@ -4,6 +4,6 @@ from Utils import IsPrimeByFred
 number = 3321321
 result = IsPrimeByFred(number)
 if result:
-    print("The number is prime")
+    print(f'{number} is prime')
 else:
-    print("The number is not prime")
+    print(f'{number} is not prime')
