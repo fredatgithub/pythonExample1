@@ -19,7 +19,6 @@ lastdifference = 0
 lastPrime = 2
 liste_de_difference = []
 line = ''
-#liste_de_chaines.append("Première chaîne")
 for number in range(2,intMaxSize):
     if IsPrimeByChatGPT(number):
         #print(f'{number}', end=" ")
