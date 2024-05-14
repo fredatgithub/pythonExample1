@@ -9,6 +9,7 @@ if result:
 else:
     print(f'{number} is not prime')
 
-for number in range(1000000,1000090):
+for number in range(1000000,1000990):
     if IsPrimeByChatGPT(number):
-        print(f'{number} is prime')
+        print(f'{number}', end=" ")
+print('are prime numbers')
