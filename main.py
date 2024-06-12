@@ -19,7 +19,7 @@ lastdifference = 0
 lastPrime = 2
 liste_de_difference = []
 line = ''
-for number in range(2,intMaxSize):
+for number in range(2, intMaxSize):
     if IsPrimeByChatGPT(number):
         #print(f'{number}', end=" ")
         lastdifference = number - lastPrime
@@ -38,5 +38,5 @@ with open('PrimeDifference2-500Millions.txt', 'w') as fichier:
     fichier.write("Différence des nombres premiers de 2 à 100_000_000\n")
     for element in liste_de_difference:
         fichier.write(str(element) + "\n")
-    
+
 print('Fichier écrit')
